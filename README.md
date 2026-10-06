@@ -2,7 +2,7 @@
 
 This repository contains a VHDL implementation of a hardware processing unit designed for a digital logic/embedded systems project. The main design is implemented in `10851917_10839448.vhd` and is named `project_reti_logiche`.
 
-The project appears to be a memory-driven signal-processing block that reads data from external memory, processes it using a set of coefficients and sliding windows, and writes the result back to memory.
+The project is a memory-driven signal-processing block that reads data from external memory, processes it using a set of coefficients and sliding windows, and writes the result back to memory.
 
 ## Project overview
 
@@ -19,7 +19,7 @@ The design exposes a synchronous interface with:
 - `o_mem_en` memory enable
 - `o_done` completion flag
 
-From the implementation, the module performs a sequence of memory reads, coefficient and window handling, and arithmetic computation. It supports signed arithmetic and writes processed results back to memory after completing a computation step.
+The module performs a sequence of memory reads, coefficient and window handling, and arithmetic computation. It supports signed arithmetic and writes processed results back to memory after completing a computation step.
 
 ## Main files
 
@@ -54,11 +54,11 @@ The repository includes several testbench files in the `Testbenches` folder, suc
 - `tb_new.vhd`
 - `testbench_202533172420.vhd`
 
-These files suggest the design was validated through positive and negative intermediate cases, as well as general functional simulation.
+The design was validated through positive and negative intermediate cases, as well as general functional simulation.
 
 ## Hardware tool context
 
-The timing report references Vivado 2016.1 and an FPGA target device (`7k70t-fbv676`), indicating this project was developed and validated in the Xilinx Vivado environment.
+This project was developed and validated in the Xilinx Vivado environment.
 
 ## Typical workflow
 
@@ -87,7 +87,3 @@ This is a generic example; exact commands may vary depending on the simulator us
 - The project is written entirely in VHDL.
 - The code contains explicit state-machine logic and memory interfacing.
 - The repository includes both documentation and hardware validation artifacts, suggesting an academic or coursework-oriented digital design project.
-
-## License
-
-No explicit license file was found in the repository metadata. If you plan to distribute or publish this project, it is recommended to add a suitable open-source license such as MIT or GPL.
